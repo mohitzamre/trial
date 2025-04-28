@@ -2,7 +2,6 @@ pipeline{
   agent none
   stages{
       stage('dev'){
-          when {branch 'dev'}
           steps{
               sh 'echo "hello dev"'
           }
